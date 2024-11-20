@@ -6,7 +6,7 @@ https://github.com/Entropy-Foundation/aptos-core/blob/b414eadb54e8e8722e58096f96
 This example does the following...
 * Generates a new SupraAccount
 * Funds the new SupraAccount/Registers it on-chain
-* Derives the resource account address from source address (new SupraAccount) and optional seed
+* Derives the resource account address from source address (new SupraAccount) and unique seed
 * Sets the named addresses values according to addresses from steps 1 and 2.
 * Builds the publish payload and extracts the data from JSON output
 * Creates a raw txn object for resource_account::create_resource_account_and_publish_package
