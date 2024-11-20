@@ -24,4 +24,10 @@ This example does the following...
 
 4: execute the typescript_sdk `npx ts-node typescript_sdk/src/example.ts`
 
+## To call function/Check balance:
 
+`supra move tool run --function-id RESOURCE_ADDR::simple_defi::exchange_to_entry --args u64:50000000 --url https://rpc-testnet.supra.com`
+
+`supra move tool run --function-id RESOURCE_ADDR::simple_defi::exchange_from_entry --args u64:50000000 --url https://rpc-testnet.supra.com`
+
+`https://rpc-testnet.supra.com/rpc/v1/accounts/{YOUR_ADDRESS}/resources/0x1::coin::CoinStore<{RESOURCE_ADR}::simple_defi::ChloesCoin>`
