@@ -1,0 +1,20 @@
+{
+  "name": "create-resource-account-and-publish-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "supra-l1-sdk": "github:Entropy-Foundation/supra-l1-sdk"
+  }
+}
