@@ -91,7 +91,7 @@ async function main(hostDirectory: string, packageName: string, namedAddresses: 
     let modulesTypeCode: TxnBuilderTypes.Module[] = [];
     for (let i = 0; i < modulesCode.length; i++) {
       modulesTypeCode.push(
-        new TxnBuilderTypes.Module(Uint8Array.from(modulesCode[i]))
+        new TxnBuilderTypes.Module(modulesCode[i])
       );
     }
     BCS.serializeVector(modulesTypeCode, codeSerializer);
@@ -105,7 +105,10 @@ async function main(hostDirectory: string, packageName: string, namedAddresses: 
         "resource_account",
         "create_resource_account_and_publish_package",
         [],
-        [BCS.bcsSerializeBytes(seed), BCS.bcsSerializeBytes(packageMetadata),codeSerializer.getBytes()]
+        [
+          BCS.bcsSerializeBytes(seed), 
+          BCS.bcsSerializeBytes(packageMetadata),codeSerializer.getBytes()
+        ]
     )
     
     //Send the serialzed txn
