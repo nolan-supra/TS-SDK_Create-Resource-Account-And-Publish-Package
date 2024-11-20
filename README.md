@@ -1,5 +1,6 @@
 This is an SDK example for calling the following method:
 `resource_account::create_resource_account_and_publish_package`
+
 https://github.com/Entropy-Foundation/aptos-core/blob/b414eadb54e8e8722e58096f96dab17a11787646/aptos-move/framework/supra-framework/sources/resource_account.move#L124
 
 This example does the following...
